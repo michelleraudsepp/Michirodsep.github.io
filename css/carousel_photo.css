@@ -1,0 +1,61 @@
+.css-carousal{
+  overflow: hidden;
+  margin-left: 11%;
+  margin-top: 2%;
+
+}
+
+.css-carousal .css-img{
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 60%;
+  height: 60%;
+  max-width: 60%;
+  max-height:60%;
+  position: absolute;
+  opacity:0;
+  -webkit-animation-name: css-animation-fade;
+  -webkit-animation-duration: 45s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+.css-carousal .css-img:nth-child(2){
+  -webkit-animation-delay: 5s;
+}
+
+.css-carousal .css-img:nth-child(3){
+  -webkit-animation-delay: 10s;
+}
+
+.css-carousal .css-img:nth-child(4){
+  -webkit-animation-delay: 15s;
+}
+
+.css-carousal .css-img:nth-child(5){
+  -webkit-animation-delay: 20s;
+}
+
+.css-carousal .css-img:nth-child(6){
+  -webkit-animation-delay: 25s;
+}
+
+.css-carousal .css-img:nth-child(7){
+  -webkit-animation-delay: 30s;
+}
+
+.css-carousal .css-img:nth-child(8){
+  -webkit-animation-delay: 35s;
+}
+
+.css-carousal .css-img:nth-child(9){
+  -webkit-animation-delay: 40s;
+}
+
+@-webkit-keyframes css-animation-fade{
+  from { opacity:0;}
+  5% { opacity: 1;}
+  15%{ opacity: 1;}
+  20%{opacity: 0;}
+  to { opacity: 0;}
+}

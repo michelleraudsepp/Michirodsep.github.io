@@ -1,0 +1,175 @@
+@media (max-width: 320px) {
+  float: none;
+  width: 100%;
+}
+
+body {
+  font-size: 25;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+header {
+  background: rgb(0,0,0);
+}
+
+header #container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  /* This keeps the nav inside the header block. */
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0;
+  color: #fff;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  /* These move the nav to the bottom right of the header block. */
+
+  bottom: 5px;
+  /* Keeps the nav header on the same baseline. */
+}
+
+nav ul {
+  /* These remove default settings applied by the browser. */
+  padding-left: none;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-left: 2em;
+  color: #fff;
+
+  /* Anything else you want 'centered' (aligned on the left with
+     your headline and on the right with your nav), you will need
+     to use a simple centering technique */
+}
+
+main {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
+/* DROPDOWN MENU */
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul {
+	padding: 0 10px;
+	list-style: none;
+	position: relative;
+  display: inline-table;
+}
+
+nav ul:after {
+	content: "";
+  clear: both;
+  display: block;
+}
+
+nav ul li {
+	float: none;
+}
+
+nav ul li:hover {
+	background: black;
+	background: linear-gradient(top, black 0%, black 40%);
+	background: -moz-linear-gradient(top, black 0%, black 40%);
+	background: -webkit-linear-gradient(top, black 0%,black 40%);
+}
+
+nav ul li:hover a {
+	color: gray;
+}
+
+nav ul li a {
+	color: white;
+  text-decoration: none;
+}
+
+nav ul ul {
+	background: black;
+  border-radius: 0px;
+  padding: 0;
+	position: absolute;
+  top: 100%;
+}
+
+nav ul ul li {
+	float: none;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	position: relative;
+}
+
+nav ul ul li a {
+  margin: 2px;
+}
+
+nav ul ul li a:hover {
+	background: gray;
+}
+
+#photos img {
+  border: 1px solid #222;
+  border-radius: 20px;
+  width: 300px;
+  height: 180px;
+  margin-top: 2%;
+  margin-right: 60%;
+}
+
+p {
+  text-align: center;
+}
+
+#photos2 img {
+  border: 1px solid #222;
+  border-radius: 20px;
+  height: 450px;
+  margin-top: 2%;
+}
+
+h2, h3, h4, p, address {
+    text-align: center;
+}
+
+a:link {
+    color: rgb(128,128,128);
+}
+
+/* visited link */
+a:visited {
+    color: gray;
+}
+
+#button ul li{
+  display: inline-block;
+}
+
+#button img {
+  height: 50px;
+  margin-left: 60%;
+}
